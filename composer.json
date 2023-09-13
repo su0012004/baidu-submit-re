@@ -1,0 +1,20 @@
+{
+    "name": "su/baidu-submit-re",
+    "description": "这是为百度收提交的URL集",
+    "type": "project",
+    "require": {
+ 
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Su\\BaiduSubmitRe\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yes"
+        }
+    ],
+    "minimum-stability": "dev"
+}

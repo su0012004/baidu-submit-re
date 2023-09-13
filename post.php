@@ -1,8 +1,15 @@
+
+
+<?php 
+
+$site="https://www.upetrol.net";
+$token='NlYlb9Z4EXFXpNM4';
+
 $urls = array(
-    'http://www.example.com/1.html',
-    'http://www.example.com/2.html',
+    'https://www.upetrol.net/devpc/product/detail?item_id=3104',
+    'https://www.upetrol.net/devpc/product/detail?item_id=1600',
 );
-$api = 'http://data.zz.baidu.com/urls?site=https://www.upetrol.net&token=NlYlb9Z4EXFXpNM4';
+$api = 'http://data.zz.baidu.com/urls?site='.$site.'&token='.$token;
 $ch = curl_init();
 $options =  array(
     CURLOPT_URL => $api,
@@ -14,4 +21,6 @@ $options =  array(
 curl_setopt_array($ch, $options);
 $result = curl_exec($ch);
 echo $result;
+
+?>
 						
