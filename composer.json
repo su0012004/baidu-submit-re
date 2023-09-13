@@ -1,20 +1,21 @@
 {
     "name": "su/baidu-submit-re",
     "description": "这是为百度收提交的URL集",
-    "type": "project",
+    "type": "library",
     "require": {
- 
+        "php": ">=7.0"
     },
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Su\\BaiduSubmitRe\\": "src/"
-        }
-    },
     "authors": [
         {
-            "name": "yes"
+        "name": "su",
+        "email": "605011288@qq.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "SuBaiduSubmitRe\\": "src/"
+        }
+    },
     "minimum-stability": "dev"
 }

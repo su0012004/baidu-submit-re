@@ -1,7 +1,23 @@
+<?php
+namespace SuBaiduSubmitRe;
+
+ 
+/**
+ 
+declare(strict_types=1);
+ */
+class Post  
+{
 
 
-<?php 
+      public function __construct( )
+    {
 
+    }
+    public function index()
+
+{
+        
 $site="https://www.upetrol.net";
 $token='NlYlb9Z4EXFXpNM4';
 
@@ -13,6 +29,7 @@ $api = 'http://data.zz.baidu.com/urls?site='.$site.'&token='.$token;
 $ch = curl_init();
 $options =  array(
     CURLOPT_URL => $api,
+    
     CURLOPT_POST => true,
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_POSTFIELDS => implode("\n", $urls),
@@ -21,6 +38,7 @@ $options =  array(
 curl_setopt_array($ch, $options);
 $result = curl_exec($ch);
 echo $result;
+    }
 
-?>
-						
+  }
+                        
