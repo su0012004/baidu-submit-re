@@ -1,5 +1,5 @@
 {
-    "name": "su/baidu-submit-re",
+    "name": "subaidusubmitre/baidu-submit-re",
     "description": "这是为百度收提交的URL集",
     "type": "library",
     "require": {
@@ -14,7 +14,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "SuBaiduSubmitRe\\": "src/"
+            "Subaidusubmitre\\": "src/"
         }
     },
     "minimum-stability": "dev"
